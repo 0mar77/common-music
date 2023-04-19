@@ -36,10 +36,21 @@ $(function () {
     }
   });
 
+  // Renders a div telling the user that the new event was added to localStorage
+  function localStorageNotification() {
+    const localStorageDiv = $('#local-storage');
+    localStorageDiv.html(
+      `Appointment added to 
+      <span class="text-danger">localStorage</span>
+      <span class="text-success">✔</span>`
+    );
+  }
+  
   // Code in charge of saving and rendering hour 9 AM
   nine.children('button').click(function(){
     const hour = nine.children('textarea').val();
     localStorage.setItem('nine', hour);
+    localStorageNotification();
   })
   
   function renderNine() {
@@ -53,6 +64,7 @@ $(function () {
   ten.children('button').click(function(){
     const hour = ten.children('textarea').val();
     localStorage.setItem('ten', hour);
+    localStorageNotification();
   })
   
   function renderTen() {
@@ -65,6 +77,7 @@ $(function () {
   eleven.children('button').click(function() {
     const hour = eleven.children('textarea').val();
     localStorage.setItem('eleven', hour);
+    localStorageNotification();
   })
 
   function renderEleven() {
@@ -77,6 +90,7 @@ $(function () {
   twelve.children('button').click(function() {
     const hour = twelve.children('textarea').val();
     localStorage.setItem('twelve', hour);
+    localStorageNotification();
   })
 
   function renderTwelve() {
@@ -89,6 +103,7 @@ $(function () {
   thirteen.children('button').click(function() {
     const hour = thirteen.children('textarea').val();
     localStorage.setItem('thirteen', hour);
+    localStorageNotification();
   })
 
   function renderThirteen() {
@@ -101,6 +116,7 @@ $(function () {
   fourteen.children('button').click(function() {
     const hour = fourteen.children('textarea').val();
     localStorage.setItem('fourteen', hour);
+    localStorageNotification();
   })
 
   function renderFourteen() {
@@ -113,6 +129,7 @@ $(function () {
   fifteen.children('button').click(function() {
     const hour = fifteen.children('textarea').val();
     localStorage.setItem('fifteen', hour);
+    localStorageNotification();
   })
 
   function renderFifteen() {
@@ -125,6 +142,7 @@ $(function () {
   sixteen.children('button').click(function() {
     const hour = sixteen.children('textarea').val();
     localStorage.setItem('sixteen', hour);
+    localStorageNotification();
   })
 
   function renderSixteen() {
@@ -137,6 +155,7 @@ $(function () {
   seventeen.children('button').click(function() {
     const hour = seventeen.children('textarea').val();
     localStorage.setItem('seventeen', hour);
+    localStorageNotification();
   })
 
   function renderSeventeen() {
