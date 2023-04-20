@@ -14,4 +14,6 @@
 - The events will be saved on localStorage and rendered on the calender
 - When the event is saved, a notification will appear under the header
 
+Link to deployed website: [https://0mar77.github.io/work-day-schedule/]
+
 ![Calender](images/project-pic.png)
